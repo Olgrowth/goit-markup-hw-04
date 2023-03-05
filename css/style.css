@@ -284,6 +284,19 @@ border: none;
     
 }
 
+.feature-icon {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #F4F4FD;
+    padding-bottom: 8px;
+}
+.feature-icon-item {
+    fill: #2E2F42;
+}
+
 /* .feature-item::before {
     display: block;
     content:"";
@@ -355,6 +368,7 @@ margin-bottom: 72px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding-bottom: 32px;
 }
 
 .team-social-item {
@@ -372,6 +386,16 @@ margin-bottom: 72px;
     background-color: var(--background-button-color);
 }
 
+.team-social-link:hover,
+.team-social-link:focus {
+background-color: #4D5AE5;
+
+}
+
+.team-social-icon {
+    fill: #FFFFFF;
+}
+
 
 .team-subtitle {
     color: var(--accent-color);
@@ -386,28 +410,141 @@ margin-bottom: 72px;
 }
 
 
-.footer {
-    min-height: 310px;
-    /* width: 1440px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    background-color: var(--background-color);
-    /* display: flex; */
-    /* align-items: center; */
-    padding: 100px 0;
+
+/* a { 
+    color: grey;
+    border: 1px solid grey;
+}
+
+     a:hover, a:focus { 
+        color: violet;
+         border-color: violet;
+    }
+
+     .icon {
+        fill: currentColor;
+     } */
+
+
+
+.customers-icon {
+    fill: #8E8F99;
+}
+
+/* -------customers-------- */
+.customers {
+}
+
+.customers-title {
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.customer-list:hover,
+.customer-list:focus{
+   color: #404BBF;
+   border-color: #404BBF;  
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    border: 1px dashed #8E8F99;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* fill: #8E8F99; */
+}
+
+.customers-item:hover,
+.customer-item:focus{
+   color: #404BBF;
+   border-color: #404BBF; 
 }
 
 
+.customers-link {
+}
+
+.customers-item:hover .customers-link,
+.customer-item:focus .customers-link{
+   color: #404BBF;
+   border-color: #404BBF; 
+}
+
+/* .customers-link:hover,
+.customers-link:focus{
+    fill: #404BBF;
+} */
+
+
+
+/* .customers-item:hover,
+.customers-item:focus{
+   fill: #8E8F99;
+} */
+
+
+
+/* .customers-link:hover,
+.customer-link:focus{
+    fill: #404BBF;
+} */
+/* a { 
+    color: grey;
+    border: 1px solid grey;
+}
+
+     a:hover, a:focus { 
+        color: violet;
+         border-color: violet;
+    } */
+
+.customers-icon {
+    fill: #8E8F99;
+    
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon{
+    fill: #404BBF;
+    border-color: #404BBF;
+}
+/* .icon {
+    fill:currentColor;
+    
+} */
+
+/* ---------footer-------- */
+
+.footer {
+    min-height: 310px;
+    background-color: var(--background-color);
+}
+
+.footer-box{
+    display: flex;
+
+}
+
+.footer-item-logo{
+    margin: 0;
+   padding: 100px 0; 
+}
+
 .footer-logo {
     color: var(--footer-logo-color);
-      
-
-    
 }
 
 .footer-small-logo {
     color: var(--logo-color);
-    
 }
 
 .footer-description{
@@ -416,6 +553,46 @@ margin-bottom: 72px;
     width: 264px;
     display: flex;
     align-items: center;
+}
+
+.social-media {
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+.social-media-subtitle {
+    padding-bottom: 16px;
+    color: #FFFFFF;
+
+}
+
+.social-media-list {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    background-color: #31D0AA;
+}
+
+.social-media-icon {
+    fill: #FFFFFF
 }
 
 
@@ -449,7 +626,7 @@ margin-bottom: 72px;
 .projects-list .projects-btn:focus {
     color: var(--secondary-button-color);
     background-color: var(--background-button-color);
-    }
+}
  
 /* ---------portfolio---------- */
 .portfolio-list {
