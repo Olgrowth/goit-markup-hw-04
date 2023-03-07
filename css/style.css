@@ -14,7 +14,15 @@
     --hover-color: #4D5AE5;
     --footer-description-color: #E7E9FC;
     --footer-logo-color: #F4F4FD;
-    --social-icon-color: #F4F4FD; 
+    --social-icon-color: #F4F4FD;
+    --background-social-link-color: rgba(255, 255, 255, 0.1);
+    --background-hover-link-color: #31D0AA;
+    --social-media-color: #FFFFFF;
+    --border-btn-color: #E7E9FC;
+    --border-secondary-color: #F4F4FD;
+    --customers-item-color: #404BBF;
+    --customers-icon-color: #8E8F99;
+    --background-feature-color: #F4F4FD;
     --secondary-font: 'Raleway', sans-serif;
     --padding-top: 120px;
 }
@@ -290,20 +298,13 @@ border: none;
     display: flex;
     align-items: center; 
     justify-content: center; 
-    background-color: #F4F4FD;
-    padding-bottom: 8px;
+    background-color: var(--background-feature-color);
+    margin-bottom: 8px;
 }
 .feature-icon-item {
-    fill: #2E2F42;
+    fill: var(--accent-color);
 }
 
-/* .feature-item::before {
-    display: block;
-    content:"";
-    height: 112px;
-    outline: 1px solid blue;
-    background-image: url("../images/symbol-defs.svg/");
-} */
 
 .feature-subtitle {
     font-weight: 500;
@@ -319,7 +320,7 @@ color: var(--description-color);
 
 /* --------------benefits------------ */
 .benefits {
-  /* padding-bottom: 120px;  */
+
 }
 
 .benefits-title {
@@ -388,12 +389,11 @@ margin-bottom: 72px;
 
 .team-social-link:hover,
 .team-social-link:focus {
-/* background-color: #4D5AE5; */
 
 }
 
 .team-social-icon {
-    fill: #FFFFFF;
+    fill: var(--social-media-color);
 }
 
 
@@ -411,7 +411,7 @@ margin-bottom: 72px;
 }
 
 .customers-icon {
-    fill: #8E8F99;
+    fill: var(--customers-icon-color);
 }
 
 /* -------customers-------- */
@@ -431,47 +431,46 @@ margin-bottom: 72px;
 
 .customer-list:hover,
 .customer-list:focus{
-   color: #404BBF;
-   border-color: #404BBF;  
+   color: var(--customers-item-color);
+   border-color: var(--customers-item-color);  
 }
 
 .customers-item {
-    width: 168px;
-    height: 88px;
-    border: 1px dashed #8E8F99;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* fill: #8E8F99; */
+   flex-basis: calc((100% - 120px) /6);
 }
 
 .customers-item:hover,
 .customer-item:focus{
-   color: #404BBF;
-   border-color: #404BBF; 
+   color: var(--customers-item-color);
+   border-color: var(--customers-item-color); 
 }
 
 
 .customers-link {
+ border: 1px solid var(--customers-icon-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
 }
 
 .customers-item:hover .customers-link,
 .customer-item:focus .customers-link{
-   color: #404BBF;
-   border-color: #404BBF; 
+   color: var(--customers-item-color);
+   border-color: var(--customers-item-color); 
 }
 
 
 .customers-icon {
-    fill: #8E8F99;
+    fill: var(--customers-icon-color);
     
 }
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
-    fill: #404BBF;
-    border-color: #404BBF;
+    fill: var(--customers-item-color);
+    border-color: var(--customers-item-color);
 }
 
 
@@ -515,7 +514,7 @@ margin-bottom: 72px;
 }
 .social-media-subtitle {
     padding-bottom: 16px;
-    color: #FFFFFF;
+    color: var(--social-media-color);
 
 }
 
@@ -536,16 +535,16 @@ margin-bottom: 72px;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: gray;
+    background-color: var(--background-social-link-color);
 }
 
 .social-media-link:hover,
 .social-media-link:focus {
-    background-color: #31D0AA;
+    background-color: var(--background-hover-link-color);
 }
 
 .social-media-icon {
-    fill: #FFFFFF
+    fill: var(--social-media-color);
 }
 
 
@@ -572,7 +571,7 @@ margin-bottom: 72px;
     color: var(--background-button-color);
     background-color: var(--secondary-button-color);
     padding: 11px 24px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-btn-color);
 }
 
 .projects-list .projects-btn:hover,
@@ -593,11 +592,11 @@ margin-bottom: 72px;
 .portfolio-item {
     background: var(--background-secondary-color);
     flex-basis: calc((100% - 48px) / 3);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-btn-color);
 }
  .portfolio-card-link{
     display: block;
-    border: 1px solid #F4F4FD;
+    border: 1px solid var(--border-secondary-color);
  } 
 .portfolio-card-link:hover,
 .portfolio-card-link:focus {
