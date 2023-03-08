@@ -363,7 +363,9 @@ margin-bottom: 72px;
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
     min-width: 250px;
+    
 }
+
 
 .team-social-list {
     display: flex;
@@ -387,8 +389,9 @@ margin-bottom: 72px;
     background-color: var(--background-button-color);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+
+.team-item:hover,
+.team-item:focus{
 
 }
 
