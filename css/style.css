@@ -293,7 +293,7 @@ border: none;
 }
 
 .feature-icon {
-    width: 264px;
+    /* width: 264px; */
     height: 112px;
     display: flex;
     align-items: center; 
@@ -456,6 +456,7 @@ margin-bottom: 72px;
     justify-content: center;
     align-items: center;
     height: 88px;
+    color: var(--customers-icon-color);
 }
 
 .customers-item:hover .customers-link,
@@ -466,13 +467,13 @@ margin-bottom: 72px;
 
 
 .customers-icon {
-    fill: var(--customers-icon-color);
+    fill: currentColor;
     
 }
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
-    fill: var(--customers-item-color);
+    color: var(--customers-item-color);
     border-color: var(--customers-item-color);
 }
 
