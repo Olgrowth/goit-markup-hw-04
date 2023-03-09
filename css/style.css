@@ -16,6 +16,7 @@
     --footer-logo-color: #F4F4FD;
     --social-icon-color: #F4F4FD;
     --background-social-link-color: rgba(255, 255, 255, 0.1);
+    --background-secondary-social-color: #404BBF;
     --background-hover-link-color: #31D0AA;
     --social-media-color: #FFFFFF;
     --border-btn-color: #E7E9FC;
@@ -379,6 +380,10 @@ margin-bottom: 72px;
     height: 40px;
 }
 
+.team-item:hover,
+.team-item:focus{
+}
+
 .team-social-link {
     display: flex;
     justify-content: center;
@@ -389,11 +394,11 @@ margin-bottom: 72px;
     background-color: var(--background-button-color);
 }
 
-
-.team-item:hover,
-.team-item:focus{
-
+.team-social-link:hover,
+.team-social-link:focus{
+    background-color: var(--background-secondary-social-color);
 }
+
 
 .team-social-icon {
     fill: var(--social-media-color);
